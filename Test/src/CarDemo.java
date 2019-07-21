@@ -12,6 +12,7 @@ public class CarDemo {
 			if(str.equals("start") && start==0) {
 				System.out.println("Car Started");
 				start++;
+				stop=0;
 			}else if(str.equals("start")&&start>0){
 				System.out.println("Car Already Started");
 				start++;
@@ -23,10 +24,13 @@ public class CarDemo {
 				}else if(str.equals("stop")&&stop>0){
 				System.out.println("Car Already Stoped");
 				stop++;
-				}else if(str.equals("quit")){
+				}else if(str.equals("help")){
+					System.out.println("Type bello inputs acroding your requirments \n start: Starts a car \n stop: Stops a car \n quit: terminates program");
+					
+					}else if(str.equals("quit")){
 					break;
 				}else {
-					System.out.println("Invalid Input");	
+					System.out.println("Invalid Input : Please Type help for Assistance!");	
 				}
 				}
 		System.out.println("Quit");	
